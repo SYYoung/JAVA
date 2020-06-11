@@ -1,0 +1,12 @@
+aabATGabcdefghi
+aabATGxyzabcTAA
+aabATGxyzabcdTAA
+aabATGxyzabcdTAAabTAA
+aabATGabcdefghi
+aabATGxyzabcTAG
+aabATGxyzabcdTAG
+aabATGxyzabcdTAAabTAG
+aabATGabcdefghi
+aabATGxyzabcTGA
+aabATGxyzabcdTGA
+aabATGxyzabcdTAAabTGA

@@ -1,0 +1,11 @@
+Laer. My necessaries are embark'd. Farewell.
+And, sister, as the winds give benefit
+Note this file has words that are:
+2 words of length 2: My as
+3 words of length 3: are And the
+2 words of length 4: Laer give
+1 word of length 5: winds
+1 word of length 6: sister
+1 word of length 7: benefit
+2 words of length 8: embark’d Farewell
+1 word of length 11: necessarie

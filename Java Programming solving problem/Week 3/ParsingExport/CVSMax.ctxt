@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=CVSMax
+comment0.text=\n\ Write\ a\ description\ of\ CVSMax\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=current\ coldest
+comment1.target=org.apache.commons.csv.CSVRecord\ getColdestRec(org.apache.commons.csv.CSVRecord,\ org.apache.commons.csv.CSVRecord)
+comment2.params=parser
+comment2.target=org.apache.commons.csv.CSVRecord\ coldestHourInFile(org.apache.commons.csv.CSVParser)
+comment3.params=
+comment3.target=java.lang.String\ fileWithColdestTemperature()
+comment4.params=parser
+comment4.target=void\ printAllTemperatures(org.apache.commons.csv.CSVParser)
+comment5.params=
+comment5.target=void\ testColdestHourInFile()
+comment6.params=
+comment6.target=void\ testFileWithColdestTemperature()
+numComments=7

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=GrayImage
+comment1.params=inImage
+comment1.target=edu.duke.ImageResource\ grayConversion(edu.duke.ImageResource)
+comment2.params=f\ img\ prefix
+comment2.target=void\ saveNewFile(java.io.File,\ edu.duke.ImageResource,\ java.lang.String)
+comment3.params=inImage
+comment3.target=edu.duke.ImageResource\ makeInversion(edu.duke.ImageResource)
+comment4.params=
+comment4.target=void\ testImageConversion()
+numComments=5
