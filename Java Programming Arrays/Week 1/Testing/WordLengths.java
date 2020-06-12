@@ -10,6 +10,7 @@ import edu.duke.*;
 public class WordLengths {
     public void countWordLengths(FileResource resource, int[] counts) {
         for (String word : resource.words()) {
+            System.out.println("word: " + word);
             int len = word.length();
             if (!Character.isLetter(word.charAt(0)))
                 len--;
