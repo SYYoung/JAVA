@@ -18,7 +18,7 @@ public class WordLengths {
                 len--;
             if (len > counts.length-1)
                 counts[counts.length-1]++;
-            else
+            else if (len > 0)
                 counts[len]++;
             System.out.println(word +" : length : " + len);
         }

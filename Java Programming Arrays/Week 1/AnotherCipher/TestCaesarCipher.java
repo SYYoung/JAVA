@@ -33,7 +33,7 @@ public class TestCaesarCipher {
     public void simpleTests() {
         FileResource fr = new FileResource();
         String origMsg = fr.asString();
-        int key = 18;
+        int key = 15;
         CaesarCipher c1 = new CaesarCipher(key);
         String encryptMsg = c1.encrypt(origMsg);
         String decryptMsg = c1.decrypt(encryptMsg);
@@ -54,6 +54,7 @@ public class TestCaesarCipher {
         
         countLetters(s, counts);
         int index = maxIndex(counts);
+        System.out.println("The max index = " + index);
         if (index >= posE) 
             key = index - posE;
         else

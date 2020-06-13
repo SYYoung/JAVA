@@ -70,7 +70,7 @@ public class TestCaesarCipherTwo {
     } 
     
     public void simpleTests() {
-        int key1= 17, key2 = 3;
+        int key1= 14, key2 = 24;
         CaesarCipherTwo cc = new CaesarCipherTwo(key1, key2);
         FileResource fr = new FileResource();
         String input = fr.asString();
@@ -81,7 +81,17 @@ public class TestCaesarCipherTwo {
         //System.out.println("The decrypted message: " +decryptMsg);
         
         // now with guessed key
-        String decryptMsg = breakCaesarCipher(encryptMsg);
+        String decryptMsg = breakCaesarCipher(input);
         System.out.println("The decrypted message by breaking: " +decryptMsg);
+    }
+    
+    public void simpleQuit() {
+        int key1 = 14, key2 = 24;
+        CaesarCipherTwo cc = new CaesarCipherTwo(key1, key2);
+        FileResource fr = new FileResource();
+        String input = fr.asString();
+        String decryptMsg = cc.decrypt(input);
+        System.out.println("The encrypted msg: " + input);
+        System.out.println("The decrypted msg: " + decryptMsg);
     }
 }
