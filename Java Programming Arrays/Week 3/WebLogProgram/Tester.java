@@ -19,7 +19,7 @@ public class Tester
     
     public void testLogAnalyzer(int testcase) {
         LogAnalyzer analyzer = new LogAnalyzer();
-        String fname = "../Testcase/weblog-short_log";
+        String fname = "../Testcase/short-test_log";
         analyzer.readFile(fname);
         switch (testcase) {
             case 1 : 
@@ -40,6 +40,12 @@ public class Tester
                 System.out.println("The unique IPs visit on " +someday +":");
                 for (String ip : uniqueIP)
                     System.out.println(ip);
+                break;
+            case 5:
+                int low = 300, high = 399;
+                System.out.println("The number of unique IPs which status "
+                        +"code between " +low +"and " +high
+                        +" : " + analyzer.countUniqueIPsInRange(low, high));
                 break;
         }
         

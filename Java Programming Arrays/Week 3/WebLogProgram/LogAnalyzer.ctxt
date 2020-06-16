@@ -12,4 +12,6 @@ comment5.params=num
 comment5.target=void\ printAllHigherThanNum(int)
 comment6.params=someday
 comment6.target=java.util.ArrayList\ uniqueIPVisitsOnDay(java.lang.String)
-numComments=7
+comment7.params=low\ high
+comment7.target=int\ countUniqueIPsInRange(int,\ int)
+numComments=8

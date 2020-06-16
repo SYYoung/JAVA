@@ -57,8 +57,20 @@ public class LogAnalyzer
              String mmmDD = timeList[1] +" " + timeList[2];
              String ipAddr = entry.getIpAddress();
              if (mmmDD.equals(someday) && (!uniqueIP.contains(ipAddr)))
-                uniqueIP.add(entry.getIpAddress());
+                uniqueIP.add(ipAddr);
          }
          return uniqueIP;
+     }
+     
+     public int countUniqueIPsInRange(int low, int high) {
+         ArrayList<String> uniqueIP = new ArrayList<String>();
+         for (LogEntry entry : records) {
+             int status = entry.getStatusCode();
+             String ipAddr = entry.getIpAddress();
+             if ((status >= low) && (status <= high) && 
+                    (!uniqueIP.contains(ipAddr)))
+                 uniqueIP.add(ipAddr);
+         }
+         return uniqueIP.size();
      }
 }
