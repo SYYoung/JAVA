@@ -55,7 +55,7 @@ public class Codon {
     public void testCodon() {
         FileResource fr = new FileResource();
         String dna = fr.asString().toUpperCase();
-        int start = 1, end = 5;
+        int start = 1, end = 10;
         for (int k=0; k<3; k++) {
             codonMap.clear();
             buildCodonMap(k, dna);

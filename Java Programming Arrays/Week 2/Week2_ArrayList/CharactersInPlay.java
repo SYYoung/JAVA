@@ -67,6 +67,6 @@ public class CharactersInPlay {
             for (int k=0; k<name.size(); k++) {
                 System.out.println(name.get(k) + ":\t" + count.get(k));
             }
-        charactersWithNumParts(10,15);
+        charactersWithNumParts(10, 15);
     }
 }

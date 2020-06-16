@@ -72,15 +72,19 @@ public class WordsInFiles {
     public void tester() {
         buildWordFileMap();
         int maxNum = maxNumber();
+        int number = maxNum;
         ArrayList<String> wordList = wordsInNumFiles(maxNum);
+        wordList = wordsInNumFiles(4);
+        number = 4;
         System.out.print("The greatest number of files a word appears in is " +
-                    maxNum +", and there are  " +wordList.size() +
+                    number +", and there are  " +wordList.size() +
                     " such words: ");
         for (String word : wordList)
             System.out.print("\"" +word + "\", ");
         System.out.println();
         
-        for (String word : wordList)
-            printFilesIn(word);
+        //for (String word : wordList)
+        //    printFilesIn(word);
+        printFilesIn("tree");
     }
 }
