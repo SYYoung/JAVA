@@ -19,7 +19,7 @@ public class Tester
     
     public void testLogAnalyzer(int testcase) {
         LogAnalyzer analyzer = new LogAnalyzer();
-        String fname = "../Testcase/weblog1_log";
+        String fname = "../Testcase/weblog2_log";
         analyzer.readFile(fname);
         switch (testcase) {
             case 1 : 
@@ -34,7 +34,7 @@ public class Tester
                 analyzer.printAllHigherThanNum(num);
                 break;
             case 4:
-                String someday = "Sep 30";
+                String someday = "Sep 24";
                 ArrayList<String> uniqueIP = 
                             analyzer.uniqueIPVisitsOnDay(someday);
                 System.out.println("Case 4: The unique IPs visit on " +someday +":");
@@ -43,7 +43,7 @@ public class Tester
                     System.out.println(ip);
                 break;
             case 5:
-                int low = 200, high = 299;
+                int low = 400, high = 499;
                 System.out.println("Case 5: The number of unique IPs which status "
                         +"code between " +low +"and " +high
                         +" : " + analyzer.countUniqueIPsInRange(low, high));
@@ -74,7 +74,7 @@ public class Tester
                             +analyzer.dayWithMostIPVisits());
                 break;
             case 11: // test iPsWithMostVisitsOnDay
-                String time = "Mar 17";
+                String time = "Sep 29";
                 ArrayList<String> ipList = analyzer.iPsWithMostVisitsOnDay(time);
                 System.out.println(ipList);
                 break;
