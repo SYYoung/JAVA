@@ -44,6 +44,7 @@ public class TesterCaesarCipher {
     }
     
     public void testVBreaker(int keyLen) {
+        /*
         int[] keys = new int[keyLen];
         char most_common_char = 'e';
         VigenereBreaker vb = new VigenereBreaker();
@@ -53,8 +54,9 @@ public class TesterCaesarCipher {
         System.out.println("The keys are : ");
         for (int k=0; k<keyLen; k++)
             System.out.print(keys[k] +" , ");
-            
+        */    
         // test: breakVigenere
+        VigenereBreaker vb = new VigenereBreaker();
         vb.breakVigenere();
     }
 }
